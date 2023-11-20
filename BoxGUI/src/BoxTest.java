@@ -8,7 +8,15 @@ import org.junit.jupiter.api.Assertions;
  * @version 1.0
  */
 class BoxTest {
-
+    
+    @org.junit.jupiter.api.Test
+    void Box() {
+        Box testBox = new Box(5, 6, 7);
+        Assertions.assertEquals(5, testBox.getLength());
+        Assertions.assertEquals(6, testBox.getWidth());
+        Assertions.assertEquals(7, testBox.getHeight());
+    }
+    
     @org.junit.jupiter.api.Test
     void getLength() {
         Box testBox = new Box(5,6,7);
